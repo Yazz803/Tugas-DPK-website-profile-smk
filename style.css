@@ -1,0 +1,298 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+body::before {
+    content: '';
+    position: fixed;
+    background-image: linear-gradient(
+        rgba(73, 49, 207, 0.438),
+        rgba(205, 196, 255, 0.418)
+    ),
+    url(img/GedungWikrama.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* dropdown btn */
+.dropdown-btn {
+    padding: 5% 10%;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .dropdown-btn:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      font-weight: bold;
+      color: black;
+  }
+  .active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+  }
+  .dropdown-container.one {
+    display: none;
+    background-color: #000000cc;
+    position: absolute;
+    left: 100%;
+    top: 54.5%;
+    width: 200px;
+  }.dropdown-container.two {
+    display: none;
+    background-color: #000000cc;
+    position: absolute;
+    left: 100%;
+    top: 42.5%;
+    width: 250px;
+  }
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+/* end dropdown btn */
+.clear {
+    clear: both;
+}
+
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.sidenav img {
+    margin: 10% 18%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.sidenav h1 {
+    color: white;
+    font-size: 25px;
+    margin: -10% 0% 10% 13%;
+}
+.sidenav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5% 10%;
+    text-align: left;
+}
+.sidenav a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+}
+
+/* main home */
+.main {
+    margin-left: 320px;
+    margin-right: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home {
+    height: 623px;
+}
+.logo-responsive {
+    display: none;
+}
+.main.home h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 623px;
+}
+.main.home span {
+    color: rgb(22, 22, 189);
+    text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px white;
+}
+/* end main home */
+
+/* main sejarah */
+.sejarah {
+    background-color: rgba(10, 26, 59, 0.7);
+    color: white;
+    padding: 1% 2%;
+}
+.sejarah h2 {
+    margin-bottom: 0;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+}
+.sejarah span {
+    font-weight: bold;
+}
+.sejarah p {
+    line-height: 25px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+    font-size: 18px;
+}
+.sejarah ul {
+    padding-inline-start: 18px;
+}
+.sejarah ul li {
+    padding-bottom: 5px;
+    line-height: 25px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+    font-size: 18px;
+}
+/* end main sejarah */
+
+/* matrikulasi */
+.matrikulasi {
+    background-color: rgba(0, 21, 63, 0.7);
+    color: white;
+    padding: 1% 2%;
+    margin-top: 5%;
+}
+.matrikulasi h2 {
+    margin-bottom: 0;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+}
+.matrikulasi p {
+    line-height: 25px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+    font-size: 18px;
+}
+.matrikulasi .matrikulasi-img img {
+    float: right;
+    width: 35%;
+    margin-left: 2%;
+    border-radius: .5em/2em;
+}
+/* end matrikulasi */
+
+/* kantin */
+.kantin {
+    background-color: rgba(116, 87, 24, 0.7);
+    color: white;
+    padding: 1% 2%;
+    margin-top: 5%;
+}
+.kantin h2 {
+    margin-bottom: 0;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+}
+.kantin .kantin-img img {
+    float: left;
+    width: 35%;
+    margin-right: 2%;
+    border-radius: .5em/2em;
+}
+.kantin p {
+    line-height: 25px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+    font-size: 18px;
+}
+/* end kantin */
+
+/* perpus */
+.perpus {
+    background-color: rgba(155, 125, 61, 0.7);
+    color: white;
+    padding: 1% 2%;
+    margin-top: 5%;
+}
+.perpus h2 {
+    margin-bottom: 0;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+}
+.perpus p {
+    line-height: 25px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+    font-size: 18px;
+}
+.perpus ul {
+    padding-inline-start: 18px;
+}
+.perpus li {
+    line-height: 25px;
+    text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+    font-size: 18px;
+}
+.perpus-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+.perpus-img img {
+    width: 48%;
+    margin: 1%;
+}
+.perpus span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.perpus a {
+    color: black;
+    text-shadow: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+.perpus a:hover {
+    text-decoration: underline;
+}
+/* end perpus */
+
+
+/* responsive */
+@media (max-width: 1000px) {
+    .sidenav {
+        display: none;
+    }
+    .home {
+        height: 300px;
+    }
+    .logo-responsive {
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-around;
+        opacity: .5;
+        margin-top: -280px;
+    }
+    .main.home h1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 280px;
+    }
+    .main {
+        width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+    .sejarah p, .sejarah ul li, .matrikulasi p, 
+    .kantin p, .perpus p, .perpus li, .perpus a {
+        font-size: 14px;
+        text-align: left;
+    }
+    .sejarah h2, .matrikulasi h2, .kantin h2, .perpus h2 {
+        text-align: center;
+    }
+    .matrikulasi .matrikulasi-img img {
+        width: 300px;
+        float: none;
+        margin-left: 14%;
+    }
+    .kantin .kantin-img img {
+        width: 300px;
+        margin-left: 14%;
+        float: none;
+    }
+}
+/* end responsive */
